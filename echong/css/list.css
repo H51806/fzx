@@ -1,0 +1,347 @@
+/**商品列表**/
+
+/*列表排序中的地址*/
+.norms-box{height:50px;}
+.sent-city{border:1px solid #ddd;border-top:0;width:976px;}
+.div-sentcity{height:53px;padding:0 0px 0 23px;line-height:53px;}
+.sent-city .paixufl span{border-right:none;}
+.sent-city .paixufl span.nobg:hover{background:none;color:#666;}
+
+.list_box-li .send-ps{margin-top:-12px;text-align:left;min-height:15px;max-height:30px;display:none;}
+.list_box-li .send-ps img{max-height:30px;}
+li.gdlis, .list_box-li{height:300px;}
+
+.list-place-div{padding:5px 15px 5px 5px;line-height:20px;width:auto;min-width:50px;}
+
+/*列表页商品左上角国旗*/
+.list-box-con{position:relative;}
+.pro-country{position:absolute;top:12px;left:12px;width:30px;height:30px;z-index:1;overflow: hidden;border-radius: 50%;border:1px solid #d7d7d7;}
+.pro-country img{display:block;position: absolute;top:0px;left:-10px;}
+.tit-label{border:1px solid #9f83e7;color:#9f83e7;border-radius:3px;padding:0 3px;margin-right:3px;}
+li.gdlis .gtitle,.list_box-li .gtitle{line-height: 17px;height: 36px;margin: 10px auto;font-size: 14px;}
+
+/*商品列表页TA公益*/
+li.gdlis, .list_box-li{overflow:inherit;}
+.buy-ctrld{height:32px;overflow:hidden;}
+.tadevote{width:40px;height:30px;position:absolute;bottom:-10px;right:0;background:url(../images/ta-l.png) no-repeat;cursor:pointer;}
+.tadevote img{display: inline-block;}
+.tadevote .ta-tit{background:url(../images/ta-logo.png) no-repeat center;width:186px;height:30px;}
+.tadevote .ta-font{background:url(../images/ta-line.jpg) no-repeat center bottom;}
+.tadevote .con{background: #f8f8f8;padding: 0 16px;height: 47px;text-align: center;}
+.tadevote .ta-brand {padding-top:6px;height: 47px;display: inline-block;}
+.tadevote .ta-brand .brand {padding-right: 4px;width:70px;height:35px;}
+.tadevote .ta-brand .thank{display: table;max-width:147px;text-align: left;height: 35px;}
+.tadevote .ta-brand .thank .thx{display: table-cell;vertical-align: middle;}
+.tadevote .ta-brand span {width:140px;}
+.tadevote .ta-brand .ta {color:#e3393c;margin-left:4px;}
+.ta-contc{position:absolute;right: -30px;top:30px;width:253px;border:1px solid #e5e2e8;padding:15px 10px;display:none;z-index:2;border-radius:5px;}
+.ta-contc em,.ta-contc i{position:absolute;border-width:8px;font-size:0;line-height:0;}
+.ta-contc em{top:-16px;right: 37px;border-style:dotted solid solid solid; border-color:transparent transparent #ccc transparent;}
+.ta-contc i{top:-15px;right: 37px;border-style:dotted solid solid solid; border-color:transparent transparent #fff transparent;}
+
+/*左侧ta公益*/
+.ta-barnds{border:1px solid #ddd;padding-bottom:10px;}
+.ta-barandstit{background: url(../images/ta.png) no-repeat 12px 11px;padding: 10px 10px 7px 39px;}
+.ta-maquee{height:222px; overflow:hidden; margin:0 auto;}
+.ta-maquee ul{ width:100%; height:222px;}
+.ta-maquee li{ width:100%;height:74px;}
+.ta-maquee li img{height: 74px;}
+.ta-maquee li:hover p{display:block;}
+.ta-maquee li:hover .layer-000{display:block;}
+.ta-maquee p{height:74px;line-height:74px;position:absolute;top:0;left:0;width:100%;display:none;}
+.ta-maquee p b{background:url(../images/ta.png) no-repeat -1px -51px;width:15px;height:15px;display:block;position:absolute;top:28px;right:10px;}
+.ta-maquee .layer-000{display:none;background:#000;filter:alpha(opacity=60);-moz-opacity:0.6;opacity:0.6;position:absolute;top:0;left:0;width:100%;height:74px;}
+/*E宠国际标识图*/
+.listhk-ico{vertical-align:-3px;}
+/*已售罄*/
+.listsale-out{width:100px;height:100px;position:absolute;top:55px;left:55px;}
+.saleover .listsale-out{display:block;}
+.saleover.listsale-out{display:block;}
+
+/*服饰城筛选样式*/
+.clothNav {}
+.clothNav-row {
+    padding: 10px 22px;
+}
+.clothNav-row-coll {
+    height: 50px;
+    overflow: hidden;
+}
+.clothNav-row-head {
+    display: inline-block;
+    float: left;
+    width: 94px;
+    text-align: left;
+}
+.clothNav-row-nav {
+    display: inline-block;
+    width: 700px;
+    float: left;
+}
+.clothNav-row-nav.nav1 ul {
+    margin-top: -10px;
+}
+.clothNav-row-nav.nav1 li {
+    display: inline-block;
+    float: left;
+    margin-left: 22px;
+    margin-top: 10px;
+}
+.clothNav-row-nav.nav1 li a {
+    display: block;
+    padding: 2px 8px;
+    border-radius: 9px;
+}
+.clothNav-row-nav.nav1 li a.chose,
+.clothNav-row-nav.nav1 li a:hover {
+    background-color: rgb(255, 99, 0);
+    color: white;
+}
+
+.clothNav-row-spread {
+    width:52px;
+    display: inline-block;
+    float: right;
+}
+.clothNav-row-spread a {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+.clothNav-row-spread a:hover {
+    color: #444;
+}
+.clothNav-row-nav.nav2 li b,
+.clothNav-row-spread a .arr {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    margin-left: 3px;
+    background: url(../../bg2.png) -38px -1258px;
+
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+}
+.clothNav-row-spread a .arr.active {
+    transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.clothNav-row-spread a .add {
+    margin-right: 3px;
+    color: #aaa;
+    font-size: 14px;
+}
+.clothNav-row-nav.nav2 li {
+    position: relative;
+    display: inline-block;
+    float: left;
+    border: 1px solid #ddd;
+    margin-left: 22px;
+    padding: 6px 15px;
+    cursor: pointer;
+    height:16px;
+}
+.clothNav-row-nav.nav2 li.active {
+    border-color: #999;
+}
+.clothNav-row-nav.nav2 li.active .clothNav-options {
+    display: block;
+}
+.clothNav-row-Multi {
+    display: none;
+    border: 1px solid #ddd;
+    padding-top: 20px;
+}
+.clothNav-row-Multi ul {
+    margin-top: -10px;
+}
+.clothNav-row-Multi li {
+    display: inline-block;
+    float: left;
+    margin-right: 40px;
+    margin-top: 10px
+}
+.clothNav-row-Multi li input {
+    position: relative;
+    top: 2px;
+}
+.clothNav-multi-btn {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.clothNav-multi-btn a {
+    padding: 6px 15px;
+    border-radius: 2px;
+}
+.clothNav-multi-sure {
+    background-color: rgb(255, 99, 0);
+    color: white;
+    margin-right: 10px;
+}
+.clothNav-multi-sure:hover {
+    color: white;
+}
+.clothNav-multi-cancel {
+    background-color: #eee;
+}
+.clothNav-row-nav.nav3 {
+    width: 700px;
+}
+.clothNav-options {
+    position: absolute;
+    width: 832px;
+    top: 28px;
+    left: -117px;
+    padding: 20px 30px;
+    border: 1px solid #999;
+    z-index: 2;
+    display: none;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+}
+.clothNav-options .trans {
+    position: absolute;
+    top: -1px;
+    left: 116px;
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background-color: white;
+}
+.clothNav-options .option {
+    margin-right: 50px;
+}
+.clothNav-row-ss {
+    position: relative;
+    top: 12px;
+    display: inline-block;
+    padding-left: 20px;
+}
+.clothNav-row-ss input {
+    position: relative;
+    top: 2px;
+}
+.clothNav-cutLine {
+    width: 892px;
+    height: 1px;
+    margin-left: 22px;
+    background-color: #ddd;
+}
+
+.hovtitle-size {
+    display: none;
+}
+.hovtitle-size {
+    position: absolute;
+    bottom: 0;
+    padding: 6px 0;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    width: 100%;
+}
+
+.hovtitle-size span:first-child {
+    float: left;
+    margin-left: 6px;
+}
+.hovtitle-size span:last-child {
+    float: right;
+    margin-right: 6px;
+}
+/* 搜索找不到结果*/
+.search-notip{padding:50px 100px;}
+.search-tipfont{background:url(../images/notFound.png) no-repeat left #fff;padding-left:170px;min-height:140px;padding-top:50px;}
+.search-tipfont p{color:#b6b6b6;line-height:20px;}
+.search-tipfont {
+    background: url("../images/notFound.png") no-repeat left #fff;
+    padding-left: 200px;
+  }
+  .search-tipfont i {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+  }
+  .goToCat {
+    color: #6a4385;
+  }
+  .goToCat i {
+    background: url("../images/catbar.png") no-repeat 0 -240px;
+  }
+  .goToDog {
+    color: #459d36;
+  }
+  .goToDog i {
+    background: url("../images/bar.png") no-repeat 0 -242px;
+  }
+
+  .shade{
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0,0,0,.5);
+      z-index: 9999;
+  }
+  .shade .content{
+      position: absolute;
+      width: 409px;
+      height: 400px;
+      left:50%;
+      top:50%;
+      margin-left: -205px;
+      margin-top: -200px;
+  }
+  .shade .conTop{
+      width:100%;
+      height:221px;
+      background: url("../images/popupBg.png") no-repeat;
+  }
+.shade .conTop p{
+    font-size: 39px;
+    color: #66520a;
+    font-weight: bold;
+    width: 68%;
+    margin: auto;
+    padding-top: 74px;
+}
+.shade .conBot{
+    width:100%;
+    padding-bottom:10px;
+    background: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.shade .conBot p{
+    font-size: 18px;
+    color: #555;
+    width:92%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.shade .conBot a{
+    width: 124px;
+    margin: auto;
+    display: block;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 24px;
+    color: #fff;
+    background: #17d7b0;
+    letter-spacing: 4px;
+    text-indent: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.none{display: none;}

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://www.epet.com/cart/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script type="text/javascript" src="../lieb/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script src="../js/gouwuche.js"></script>
+
+</head>
+<body>
+<div class="headerTop fixed">
+<div class="w-max ct">
+<div class="header_tl">
+                        <p><a href="../index.html" class="epet-index-brand">E宠首页</a></p>
+                        <p class="clearfix"></p>
+                        <p><a class="cf60 epetbrand"  rel="nofollow" href="../index.html">E宠就是正品</a></p>
+                </div>
+        
+     
+                    
+        <ul class="header_topri fr" data-name="login">
+            <li><a class="cred" href="#" onclick="pub_suggest(1);">问题反馈</a></li>
+            <li class="dropmn">
+                <i></i>
+                <p class="topgz fl"><span><a href="#" rel="nofollow">我的E宠</a></span><b></b>
+                </p>
+                <div class="myec_tc boxsha">
+                    <a href="#" rel="nofollow">我的订单</a>
+                    <a href="#" rel="nofollow">退换货记录</a>
+                    <a href="#" rel="nofollow">我的优惠券</a>
+                    <a href="#" rel="nofollow">我的余额</a>
+                    <a href="#" rel="nofollow">VIP俱乐部</a>        
+                </div>
+            </li>
+            <li class="cart-t"> <i></i> <a href="#">购物车(<em id="cart_num" data-name="cart_num">0</em>)</a> </li>
+            <li class="view-LoginStatus"></li>
+            <li data-name="nologin" class="pre_loading" style="display: none;"><img src="../images/load.gif"></li>
+                    </ul>
+       </div>
+    </div>
+</div>
+<div class="w-max ct" style="margin-top: 50px;">
+<div class="cart-top">
+<div class="cart-logo fl"><a href="#" title="E宠网">
+<img src="../images/cart-logo.png" alt="购物车"></a>
+</div>
+<div class="page-name c333 fl ml">购物车</div>
+<form method="get"  action="http://list.epet.com/search/main.html" id="schform">
+<div class="cart-search fr overflow clearfix mt20">
+<ul class="sch_list hide">
+</ul>
+<input type="text" name="keyword" class="search-text bgwhite fl" autocomplete="off">
+<input name="pet_type" type="hidden" value="fish">
+<input name="version" type="hidden" value="2.0.0">
+<a href="#" onclick="$(&#39;#schbutton&#39;).trigger(&#39;click&#39;);" class="cfff fr ftc">搜索</a>
+<button class="shide" id="schbutton" value="true" type="submit"></button>
+</div>
+</form>
+<div class="clear"></div>
+</div>
+<div class="select-menu rela">
+<div id="cart-menu">
+<ul class="cart-menu clearfix nav-menu">
+<li id="one1" onclick="Epet.Cart.Submit.showCart();" class="current"><span class="newtips1"></span>E宠购物车<em data-name="cart_num" class="fcolor ml5">0</em></li>
+<li id="one5"><a href="#" ><span class="newtips2"></span>E宠国际购物车</a></li>
+<li id="one2" onclick="Epet.Cart.Submit.showFavors();">我的收藏<em class="fcolor ml5">?</em></li>
+<li id="one3" onclick="Epet.Cart.Submit.showBought();">我购买过<em class="fcolor ml5">?</em></li>
+<li id="one4" onclick="Epet.Cart.Submit.showViewed();">最近浏览<em class="fcolor ml5">3</em></li>
+</ul>
+<div class="nav-currentt" style="width: 176px; left: 0px;"><div class="arrow ftc"><i></i></div></div>
+</div>
+ </div>
+ </div>
+</div>
+</div>
+</div>
+<div class="contentbox">
+
+<div class="null-shopcart dib">
+<div id="con_one_1">
+<table cellpadding="0" cellspacing="0" class="cart-table mt" border="0" width="100%">
+<tbody class="view-CartList">
+<div class="ftc">
+
+<!-- <h1 class="ft30 c999">您购物车空空的，快去选购吧！</h1>
+<div class="mt5 go-bbtn">
+<a class="sbtn mt mr20" href="#"><span>一键购买</span></a>
+<a class="sbtn mt" href="#"><span>去首页</span></a>
+</div> -->
+</div>
+</tbody>
+</table>
+</div>
+<a style="margin-bottom: 60px;display: block;" name="huangou"></a>
+
+<div>
+<div class="w-max ct">
+<div class="qc-banner">
+<div class="mt20">
+<a href="#"><img src="../images/210c2037582c2e460ca368721a7dcb90.jpg@!water" width="1200" height="350"></a>
+</div>
+</div>
+<!-- <div class="qcGoodsBox clearfix">
+<div class="fl rela">
+<div class="imgBox">
+<div id="wrap" class=" cloud-zoom-wrap gdimg_247942 photoview" psrc="https://img1.epetbar.com/2017-11/10/15/6cb0fa9bff5e1dd3db48aa2e121ccfd2.jpg@!400w-b">
+<a href="#" >
+<img class="ct db" style="width:140px;" alt="开饭乐 切刻海藻味磨牙骨 200g 海藻味" src="../images/6cb0fa9bff5e1dd3db48aa2e121ccfd2.jpg@!100w-c">
+</a>
+</div>
+</div>
+<div class="clearfix pd14">
+<div class="picroll fl">
+<ul class="oborder">
+<li class="on">
+<a href="#" imgsrc="https://img1.epetbar.com/2017-11/10/15/6cb0fa9bff5e1dd3db48aa2e121ccfd2.jpg@!400w-b" gid="247942">
+<img alt="247942" src="../images/6cb0fa9bff5e1dd3db48aa2e121ccfd2.jpg@!50w-c">
+</a>
+</li>
+</ul>
+</div>
+<div class="fr">
+<span class="qtype mtop10">我不新鲜</span>
+</div>
+</div>
+<p class="qcGoodsTit ft12 c333">
+开饭乐 切刻海藻味磨牙骨 200g 海藻味 </p>
+<div class="qcPriceBox clearfix pd14">
+<div class="fl cf03e3e">
+<span class="ft14">￥</span><span class="ft20">4.18</span><span class="ft12 c999 through ml5">￥29.90</span>
+</div>
+<div class="fr">
+<a class="pointer" href="#" onclick="Epet.Cart.Submit.huangouCartBuyClear(247942,3433747);">
+<img src="../images/cart.png">
+</a>
+</div>
+</div>
+<div class="abs ftc discountLogo cfff">
+<p class="ft18">1.4</p>
+<p class="ft12">折</p>
+</div>
+<div class="goodsTip">
+<p>此商品属临期类，2018-11-12到期，优惠处理</p>
+</div>
+</div>
+<div class="fl rela">
+<div class="imgBox">
+<div id="wrap" class=" cloud-zoom-wrap gdimg_247945 photoview" psrc="https://img1.epetbar.com/2017-11/10/15/5f4d33ede75e8f12f996668001e002f7.jpg@!400w-b">
+<a href="#" >
+<img class="ct db" style="width:140px;" alt="开饭乐 切刻奶味磨牙骨 200g 奶味" src="../images/5f4d33ede75e8f12f996668001e002f7.jpg@!100w-c">
+</a>
+</div>
+</div>
+<div class="clearfix pd14">
+<div class="picroll fl">
+<ul class="oborder">
+<li class="on">
+<a href="#" imgsrc="https://img1.epetbar.com/2017-11/10/15/5f4d33ede75e8f12f996668001e002f7.jpg@!400w-b" gid="247945">
+<img alt="247945" src="../images/5f4d33ede75e8f12f996668001e002f7.jpg@!50w-c">
+</a>
+</li>
+</ul>
+</div>
+<div class="fr">
+<span class="qtype mtop10">我不新鲜</span>
+</div>
+</div>
+<p class="qcGoodsTit ft12 c333">
+开饭乐 切刻奶味磨牙骨 200g 奶味 </p>
+<div class="qcPriceBox clearfix pd14">
+<div class="fl cf03e3e">
+<span class="ft14">￥</span><span class="ft20">4.18</span><span class="ft12 c999 through ml5">￥29.90</span>
+</div>
+<div class="fr">
+<a class="pointer" href="#" onclick="Epet.Cart.Submit.huangouCartBuyClear(247945,3433750);">
+<img src="../images/cart.png">
+</a>
+</div>
+</div>
+<div class="abs ftc discountLogo cfff">
+<p class="ft18">1.4</p>
+<p class="ft12">折</p>
+</div>
+<div class="goodsTip">
+<p>此商品属临期类，2018-11-12到期，优惠处理</p>
+</div>
+</div>
+<div class="fl rela">
+<div class="imgBox">
+<div id="wrap" class=" cloud-zoom-wrap gdimg_252018 photoview" psrc="https://img1.epetbar.com/2017-12/13/15/66ecebd1326c06d1c08323b220a0800d.jpg@!400w-b">
+<a href="#" >
+<img class="ct db" style="width:140px;" alt="德国原装进口俊宝 猫用麦芽毛球营养膏 200g 200g" src="../images/66ecebd1326c06d1c08323b220a0800d.jpg@!100w-c">
+</a>
+</div>
+</div>
+<div class="clearfix pd14">
+<div class="picroll fl">
+<ul class="oborder">
+<li class="on">
+<a href="#" imgsrc="https://img1.epetbar.com/2017-12/13/15/66ecebd1326c06d1c08323b220a0800d.jpg@!400w-b" gid="252018">
+<img alt="252018" src="../images/66ecebd1326c06d1c08323b220a0800d.jpg@!50w-c">
+</a>
+</li>
+</ul>
+</div>
+<div class="fr">
+<span class="qtype mtop10">我不新鲜</span>
+</div>
+</div>
+<p class="qcGoodsTit ft12 c333">
+德国原装进口俊宝 猫用麦芽毛球营养膏 200g 200g </p>
+<div class="qcPriceBox clearfix pd14">
+<div class="fl cf03e3e">
+<span class="ft14">￥</span><span class="ft20">63.14</span><span class="ft12 c999 through ml5">￥154.00</span>
+</div>
+<div class="fr">
+<a class="pointer" href="#" onclick="Epet.Cart.Submit.huangouCartBuyClear(252018,3435608);">
+<img src="../images/cart.png">
+</a>
+</div>
+</div>
+<div class="abs ftc discountLogo cfff">
+<p class="ft18">4.1</p>
+<p class="ft12">折</p>
+</div>
+<div class="goodsTip">
+<p>此商品属临期类，2018-12-25到期，优惠处理</p>
+</div>
+</div>
+<div class="fl rela">
+<div class="imgBox">
+<div id="wrap" class=" cloud-zoom-wrap gdimg_256315 photoview" psrc="https://img1.epetbar.com/2018-02/06/10/ca1f436e6f62450c8f75d79f293f2244.jpg@!400w-b">
+<a href="#" >
+<img class="ct db" style="width:140px;" alt="维斯康VitsCan 幼犬专用速溶奶粉 300g" src="../images/ca1f436e6f62450c8f75d79f293f2244.jpg@!100w-c">
+</a>
+</div>
+</div>
+<div class="clearfix pd14">
+<div class="picroll fl">
+<ul class="oborder">
+<li class="on">
+<a href="#" imgsrc="https://img1.epetbar.com/2018-02/06/10/ca1f436e6f62450c8f75d79f293f2244.jpg@!400w-b" gid="256315">
+<img alt="256315" src="../images/ca1f436e6f62450c8f75d79f293f2244.jpg@!50w-c">
+</a>
+</li>
+<li>
+<a href="#" imgsrc="https://img1.epetbar.com/2018-10/09/19/5cdf2cbc8a27c6e72b78f88236de02cc.jpg@!400w-b" gid="256315">
+<img alt="256315" src="../images/5cdf2cbc8a27c6e72b78f88236de02cc.jpg@!50w-c">
+</a>
+</li>
+</ul>
+</div>
+<div class="fr">
+<span class="qtype mtop10">我不新鲜</span>
+</div>
+</div>
+<p class="qcGoodsTit ft12 c333">
+维斯康VitsCan 幼犬专用速溶奶粉 300g </p>
+<div class="qcPriceBox clearfix pd14">
+<div class="fl cf03e3e">
+<span class="ft14">￥</span><span class="ft20">49.00</span><span class="ft12 c999 through ml5">￥98.00</span>
+</div>
+<div class="fr">
+<a class="pointer" href="#" onclick="Epet.Cart.Submit.huangouCartBuyClear(256315,3437328);">
+<img src="../images/cart.png">
+</a>
+</div>
+</div>
+<div class="abs ftc discountLogo cfff">
+<p class="ft18">5</p>
+<p class="ft12">折</p>
+</div>
+<div class="goodsTip">
+<p>此商品属临期类，2019-1-5到期，优惠处理</p>
+</div>
+</div>
+<div class="fl rela">
+<div class="imgBox">
+<div id="wrap" class=" cloud-zoom-wrap gdimg_243445 photoview" psrc="https://img1.epetbar.com/2017-07/14/16/066a7cb88e7c988a23653a02e8b1c3e1.jpg@!400w-b">
+<a href="#" >
+<img class="ct db" style="width:140px;" alt="澳洲原装进口Mr.Paws 宠物椰子油 250ml" src="../images/066a7cb88e7c988a23653a02e8b1c3e1.jpg@!100w-c">
+</a>
+</div>
+</div>
+<div class="clearfix pd14">
+<div class="picroll fl">
+<ul class="oborder">
+<li class="on">
+<a href="#" imgsrc="https://img1.epetbar.com/2017-07/14/16/066a7cb88e7c988a23653a02e8b1c3e1.jpg@!400w-b" gid="243445">
+<img alt="243445" src="../images/066a7cb88e7c988a23653a02e8b1c3e1.jpg@!50w-c">
+</a>
+</li>
+<li>
+<a href="#" imgsrc="https://img1.epetbar.com/2018-05/29/11/a3e9948c3a63e0d570d5e3567044c3e2.jpg@!400w-b" gid="243445">
+<img alt="243445" src="../images/a3e9948c3a63e0d570d5e3567044c3e2.jpg@!50w-c">
+</a>
+</li>
+</ul>
+</div>
+<div class="fr">
+<span class="qtype mtop10">我不完美</span>
+</div>
+</div>
+<p class="qcGoodsTit ft12 c333">
+澳洲原装进口Mr.Paws 宠物椰子油 250ml </p>
+<div class="qcPriceBox clearfix pd14">
+<div class="fl cf03e3e">
+<span class="ft14">￥</span><span class="ft20">118.50</span><span class="ft12 c999 through ml5">￥158.00</span>
+</div>
+<div class="fr">
+<a class="pointer" href="#" onclick="Epet.Cart.Submit.huangouCartBuyClear(243445,3431462);">
+<img src="../images/cart.png">
+</a>
+</div>
+</div>
+<div class="abs ftc discountLogo cfff">
+<p class="ft18">7.5</p>
+<p class="ft12">折</p>
+</div>
+<div class="goodsTip">
+<p>此商品属轻微破包类，包装破损,2019-2-15到期，优惠处理</p>
+</div>
+</div>
+<div class="fl rela">
+<div class="imgBox">
+<div id="wrap" class=" cloud-zoom-wrap gdimg_256313 photoview" psrc="https://img1.epetbar.com/2016-05/13/14/72a10412a9aca6d98830c857d23b2ee8.jpg@!400w-b">
+<a href="#" >
+<img class="ct db" style="width:140px;" alt="日本爱喜雅 鲣鱼柳猫咪零食 维他命型 22g 维他命型" src="../images/72a10412a9aca6d98830c857d23b2ee8.jpg@!100w-c">
+</a>
+</div>
+</div>
+<div class="clearfix pd14">
+<div class="picroll fl">
+<ul class="oborder">
+<li class="on">
+<a href="#" imgsrc="https://img1.epetbar.com/2016-05/13/14/72a10412a9aca6d98830c857d23b2ee8.jpg@!400w-b" gid="256313">
+<img alt="256313" src="../images/72a10412a9aca6d98830c857d23b2ee8.jpg@!50w-c">
+</a>
+</li>
+<li>
+<a href="#" imgsrc="https://img1.epetbar.com/2018-10/09/19/40c559653ee2685f8ef5a9f7fae1b702.jpg@!400w-b" gid="256313">
+<img alt="256313" src="../images/40c559653ee2685f8ef5a9f7fae1b702.jpg@!50w-c">
+</a>
+</li>
+</ul>
+</div>
+<div class="fr">
+<span class="qtype mtop10">我不新鲜</span>
+</div>
+</div>
+<p class="qcGoodsTit ft12 c333">
+日本爱喜雅 鲣鱼柳猫咪零食 维他命型 22g 维他命型 </p>
+<div class="qcPriceBox clearfix pd14">
+<div class="fl cf03e3e">
+<span class="ft14">￥</span><span class="ft20">4.80</span><span class="ft12 c999 through ml5">￥6.00</span>
+</div>
+<div class="fr">
+<a class="pointer" href="#" onclick="Epet.Cart.Submit.huangouCartBuyClear(256313,3437334);">
+<img src="../images/cart.png">
+</a>
+</div>
+</div>
+<div class="abs ftc discountLogo cfff">
+<p class="ft18">8</p>
+<p class="ft12">折</p>
+</div>
+<div class="goodsTip">
+<p>此商品属临期类，2019-3-4到期，优惠处理</p>
+</div>
+</div>
+<div class="fl rela">
+<div class="imgBox">
+<div id="wrap" class=" cloud-zoom-wrap gdimg_245411 photoview" psrc="https://img1.epetbar.com/2016-02/23/10/1c15435b6152410045ff1e95042d9777.jpg@!400w-b">
+<a href="#" >
+<img class="ct db" style="width:140px;" alt="精灵猫Heart Link  泰迪贵宾天然幼犬粮 3kg " src="../images/1c15435b6152410045ff1e95042d9777.jpg@!100w-c">
+</a>
+</div>
+</div>
+<div class="clearfix pd14">
+<div class="picroll fl">
+<ul class="oborder">
+<li class="on">
+<a href="#" imgsrc="https://img1.epetbar.com/2016-02/23/10/1c15435b6152410045ff1e95042d9777.jpg@!400w-b" gid="245411">
+<img alt="245411" src="../images/1c15435b6152410045ff1e95042d9777.jpg@!50w-c">
+</a>
+</li>
+<li>
+<a href="#" imgsrc="https://img1.epetbar.com/2018-06/12/15/247e0d7a51c6539effdfb7fdbd8eec1a.jpg@!400w-b" gid="245411">
+<img alt="245411" src="../images/247e0d7a51c6539effdfb7fdbd8eec1a.jpg@!50w-c">
+</a>
+</li>
+</ul>
+</div>
+<div class="fr">
+<span class="qtype mtop10">我不完美</span>
+</div>
+</div>
+<p class="qcGoodsTit ft12 c333">
+精灵猫Heart Link 泰迪贵宾天然幼犬粮 3kg </p>
+<div class="qcPriceBox clearfix pd14">
+<div class="fl cf03e3e">
+<span class="ft14">￥</span><span class="ft20">86.25</span><span class="ft12 c999 through ml5">￥115.00</span>
+</div>
+<div class="fr">
+<a class="pointer" href="#" onclick="Epet.Cart.Submit.huangouCartBuyClear(245411,3432200);">
+<img src="../images/cart.png">
+</a>
+</div>
+</div>
+<div class="abs ftc discountLogo cfff">
+<p class="ft18">7.5</p>
+<p class="ft12">折</p>
+</div>
+<div class="goodsTip">
+<p>此商品属轻微破包类，包装破损,2019-3-6到期，优惠处理</p>
+</div>
+</div>
+<div class="fl rela">
+<div class="imgBox">
+<div id="wrap" class=" cloud-zoom-wrap gdimg_247291 photoview" psrc="https://img1.epetbar.com/2016-02/23/10/420edcc0cb76a3b87adf1e9dee3a5cb3.jpg@!400w-b">
+<a href="#" >
+<img class="ct db" style="width:140px;" alt="精灵猫Heart Link 小型犬专用成犬粮 2kg" src="../images/420edcc0cb76a3b87adf1e9dee3a5cb3.jpg@!100w-c">
+</a>
+</div>
+</div>
+<div class="clearfix pd14">
+<div class="picroll fl">
+<ul class="oborder">
+<li class="on">
+<a href="#" imgsrc="https://img1.epetbar.com/2016-02/23/10/420edcc0cb76a3b87adf1e9dee3a5cb3.jpg@!400w-b" gid="247291">
+<img alt="247291" src="../images/420edcc0cb76a3b87adf1e9dee3a5cb3.jpg@!50w-c">
+</a>
+</li>
+<li>
+<a href="#" imgsrc="https://img1.epetbar.com/2018-07/04/13/bafaaf414fc3f2962889032fb4b3ae82.jpg@!400w-b" gid="247291">
+<img alt="247291" src="../images/bafaaf414fc3f2962889032fb4b3ae82.jpg@!50w-c">
+</a>
+</li>
+</ul>
+</div>
+<div class="fr">
+<span class="qtype mtop10">我不完美</span>
+</div>
+</div>
+<p class="qcGoodsTit ft12 c333">
+精灵猫Heart Link 小型犬专用成犬粮 2kg </p>
+<div class="qcPriceBox clearfix pd14">
+<div class="fl cf03e3e">
+<span class="ft14">￥</span><span class="ft20">66.00</span><span class="ft12 c999 through ml5">￥88.00</span>
+</div>
+<div class="fr">
+<a class="pointer" href="#" onclick="Epet.Cart.Submit.huangouCartBuyClear(247291,3433325);">
+<img src="../images/cart.png">
+</a>
+</div>
+</div>
+<div class="abs ftc discountLogo cfff">
+<p class="ft18">7.5</p>
+<p class="ft12">折</p>
+</div>
+<div class="goodsTip">
+<p>此商品属轻微破包类，包装破损,2019-6-8到期，优惠处理</p>
+</div>
+</div>
+</div>
+</div>
+</div><script src="../images/hm.js"></script><script src="../images/hm(1).js"></script><script async="" src="../images/sensorsdata.min.js"></script><script type="text/javascript" async="" src="../images/analytics.js"></script></div>
+<div id="con_one_2" style="display:none"></div>
+<div id="con_one_3" style="display:none"></div>
+<div id="con_one_4" style="display:none"></div>
+</div>
+</div>
+</div>
+
+<div class="big_photo" style="position: absolute;border: 1px #ddd solid;width: 400px;height:400px;padding: 0px;left: 0; top: 50px;display:none;overflow:hidden;z-index:10000;background:#fff url(//static.epetbar.com/skin/images/lb-loading.gif) 50% 50% no-repeat;"><img src="https://www.epet.com/cart/"></div>
+<div class="loggedbg hide"></div>
+<div class="logged rela hide">
+<div class="c666 ft12 notice">您当前未登录[游客状态]</div>
+<div class="loggedbtn mt20"><a href="#" class="ft14 cfff">我有E宠商城帐号，去登录&gt;&gt;</a></div>
+<div class="loggedbtn mt20"><a href="#" class="ft14 cfff">去注册&gt;&gt;</a></div>
+<div class="loggedclose pointer">×</div>
+</div>
+<div class="fish-tc hide"></div>
+<div class="fish-tc-content hide">
+<div class="fish-tc-pannel fish-tc-buy hide">
+<div class="fish-tc-title rel">
+<p class="ft18">选择收货地址</p>
+<span class="abs ftb-close"></span>
+</div>
+<div class="fish-adr-list">
+<ul>
+</ul>
+</div>
+<div class="fish-choose">
+<button class="fish-btn fish-btn-ok">确定</button>
+<button class="fish-btn fish-btn-other">选择其他配送区域</button>
+</div>
+</div>
+<div class="fish-tc-pannel fish-tc-other hide rel" style="height: 560px;">
+<div class="fish-tc-title rel">
+<p class="ft18">选择配送区域</p>
+<span class="abs fto-close"></span>
+</div>
+<div class="fish-choose-adr">
+<div class="clearfix fish-send-city">
+</div>
+<div class="fish-tip hide">
+<span class="cred" style="display: inline-block;margin: 10px 0 0 55px;">请填写完整地址！</span>
+</div>
+</div>
+<div class="fish-choose ftc abs" style="bottom: 40px; left: 250px;">
+<button class="fish-btn fish-btn-ok">确定</button>
+<button class="fish-btn fish-btn-cancel">取消</button>
+</div>
+</div>
+</div>
+<div class="public-pop-shadow fixed hide">
+<div class="public-pop-content abs bgwhite">
+<div class="clearfix public-pop-head w100">
+<p class="fl ft14 c666 pl20">E宠商城提示信息</p>
+<a href="#" onclick="$(&#39;.public-pop-shadow&#39;).hide();" class="db fr pr20 closeX">×</a>
+</div>
+<div class="pop-table">
+<div class="table-cell public-center-tip ftc hasimg">
+<div class="" style="vertical-align: middle;">
+<img src="../images/tc_img.png">
+<div class="dib hasimg-tip">
+<p class="c333 ft16 mb20">亲爱的小主：</p>
+<div class="c333 ">
+<p class="public-pop-para ft14"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="public-pop-btns pt20 ftc">
+<a class="dib bgred cwhite ft14 Ikown">我知道了</a>
+</div>
+</div>
+</div> -->
+<div class="footer-content">
+<div class="footer-top">
+<div class="footer-imgs ct w-max">
+<ul class="clearfix">
+<li class="fl">
+<a class="zp ft18" href="#" >绝对的正品</a>
+</li>
+<li class="fl">
+<a class="hh ft18" href="#" >全球的好货</a>
+</li>
+<li class="fl">
+<a class="ck ft18" href="#" >自家的仓库</a>
+</li>
+<li class="fl">
+<a class="ps ft18" href="#" >自家的配送</a>
+</li>
+<li class="fl">
+<a class="bs ft18" href="#" >养宠的帮手</a>
+</li>
+<li class="fl">
+<a class="cj ft18" href="#" >小小的成绩</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-wrapper">
+<div class="info clearfix">
+<div class="footer-phone fl">
+<img class="fl mt5 fishphone" src="../images/fish_phone.gif">
+<div class="footer-number fl">
+<h2 class="ft14 c666 bold">售后电话：</h2>
+<p class="c666 ft20 mt20">400-888-9200<span class="ml5 ft12">(免长途费)</span></p>
+<p class="c666 ft20 mt10">023-65584888</p>
+<p class="c444 ft12 mt10">服务时间：09:00--18:30（周一到周日）</p>
+</div>
+</div>
+<div class="pay-style fl">
+<h2 class="ft14 c666 bold">支付方式</h2>
+<p class="ft14 c444 mt20"><a href="#">货到付款</a></p>
+<p class="ft14 c444 mt5"><a href="#">余额支付</a></p>
+<p class="ft14 c444 mt5"><a href="#">在线支付</a></p>
+</div>
+<div class="peisong-style fl">
+<h2 class="ft14 c666 bold">配送方式</h2>
+<p class="ft14 c444 mt20"><a href="#">E宠快递</a></p>
+<p class="ft14 c444 mt5"><a href="#">外包快递</a></p>
+<p class="ft14 c444 mt5"><a href="#">物流运输</a></p>
+<p class="ft14 c444 mt5"><a href="#">公司地址</a></p>
+</div>
+<div class="shopping-guide fl">
+<h2 class="ft14 c666 bold">购物指南</h2>
+<p class="ft14 c444 mt20"><a href="#">退换货政策</a></p>
+<p class="ft14 c444 mt5"><a href="#">常见问题</a></p>
+</div>
+<div class="about-us fl">
+<h2 class="ft14 c666 bold">关于我们</h2>
+<p class="ft14 c444 mt20"><a href="#">关于我们</a></p>
+<p class="ft14 c444 mt5"><a href="#">仓储中心</a></p>
+<p class="ft14 c444 mt5"><a href="#">联系我们</a></p>
+<p class="ft14 c444 mt5"><a href="#"  title="应急响应">应急响应</a></p>
+</div>
+<div class="app-code fl">
+<p class="ftc ft12">扫描下载APP</p>
+<p class="ftc ft12">下单更优惠</p>
+<a href="#" ><img src="../images/dw2.png"></a>
+</div>
+<div class="wx-code fl">
+<p class="ftc ft12">扫描关注E宠</p>
+<p class="ftc ft12">商城微信</p>
+<img src="../images/app-code.jpg">
+</div>
+</div>
+<div class="support ftc">
+<a href="#"  title="12315消费维权"><img src="../images/12315.png" alt="12315消费维权"></a>
+<a href="#"  title="360网站安全"><img src="../images/360.png" alt="360网站安全"></a>
+<a href="#"  title="诚信网站"><img src="../images/chengxin.png" alt="诚信网站"></a>
+<a href="#"  title="360品牌官网"><img alt="360品牌官网" src="../images/shiming.png"></a>
+<a href="#"  title="腾讯安全认证"><img src="../images/tx.png" alt="腾讯安全认证"></a>
+<a href="#"  title="网上交易保障中心"><img alt="网上交易保障中心" src="../images/jybz.png"></a>
+<a href="#"  title="重庆工商"><img alt="重庆工商" src="../images/cqgs.png"></a>
+<span><img src="../images/baiq.png" alt="2013年零售价百强企业"></span>
+<span><img src="../images/wsls.png" alt="重庆网商常务理事"></span>
+<span><img src="../images/sfqy.png" alt="重庆电子商务示范企业"></span>
+<span><img src="../images/yxqy.png" alt="重庆优秀互联网信息服务企业"></span>
+<span><img src="../images/bhdw.png" alt="小动物保护支持单位"></span>
+<span><img src="../images/sjws.png" alt="重庆十佳网商第一"></span>
+</div>
+<div class="footer-copy">
+<p class="ftc ft12"><a href="#">渝ICP备10002905号-1</a>&nbsp;&nbsp;<a href="#">渝ICP备10002905号-3</a>　增值电信业务经营许可证：渝B2-20140042 Copyright © 2007-2018 epet.com 　重庆易宠科技有限公司</p>
+</div>
+</div>
+</div>
+<div id="bottomadv"></div>
+<div class="ajax_load hide"></div>
+<a class="epet-app-ico" href="#" ></a>
+<div title="返回顶部" class="backtop" style="display: block;">
+<a></a>
+</div>
+<div class="zixbox">
+<div title="关闭" class="close-code hide"></div>
+<a class="epet-app-ico epet-app-ico-close" href="#" ></a>
+<a class="zix"></a>
+<a rel="nofollow" href="#"  class="weibo-ico"></a>
+<a class="wxico">
+<span></span>
+</a>
+</div>
+<div id="rtbar" style="right: 0px; top: 0px; opacity: 1;">
+    <div class="rtcont">
+                <ul class="rtcont-up" data-name="rtbar" style="height: 472px; top: 30px;">
+
+     <li class="rtl bagLi">
+        <a class="rtico rt-my" href="#"> </a>
+         <div style="text-align:center;color: #000;" class="nologin-order">您还没有登录，请先<a href="#" style="text-decoration: underline;color: red;">登录</a>。</div>
+        </li>
+
+<li class="scart rtl">
+    <div class="newdot"></div>
+     <div style="text-align:center;color: #000;" class="nologin-order">您还没有登录，请先<a href="#" style="text-decoration: underline;color: red;">登录</a>。</div>
+    <label>购物车<em>◆</em></label>
+    <a class="rtico rt-cart" href="#">
+        <span class="rtico rt-cart"></span>
+        <div class="rt-cart-num">购物车<span>0</span></div>
+    </a>
+
+</li>
+<li class="rtl">
+        <a class="rtico rt-order"></a>
+    <div style="text-align:center;color: #000;" class="nologin-order">您还没有登录，请先<a href="#" style="text-decoration: underline;color: red;">登录</a>。</div>
+    </li>
+
+<li class="sview rtl">
+    <a class="rtico rt-view"></a>
+</li></ul>
+                <ul class="rtcont-dn">
+            <li class="rtl">
+                <label>返回顶部<em>◆</em></label>
+                <a class="rtico rt-top" href="#" style="visibility: hidden;"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
