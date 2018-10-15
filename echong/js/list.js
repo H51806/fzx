@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded',function(){
 					 <div class="list_box-li" data-gid="193972">
             <div class="list-box-con">
                 <div class="gimg rela">
-                    <a href="../html/xiangqingye.html">
+                    <a href="">
                         <img width="200" height="200"  src="${item.img}">
                          <span>${item.name}</span>
                     </a>
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded',function(){
                      <div class="list_box-li">
                    <div class="list-box-con">
                   <div class="gimg rela">
-                    <a href="../html/xiangqingye.html">
+                    <a href="">
                         <img width="200" height="200"  src="${item.img}">
                          <span>${item.name}</span>
                     </a>
@@ -94,24 +94,26 @@ document.addEventListener('DOMContentLoaded',function(){
                ddleRomance(data);
               }
              })
+
+                    function zhixing(){
+                     $(".list_box-li").each(function(idx,item){
+                          
+                           item.onclick = function(){
+                               
+                                 var str = "";
+                                for(var key in data[idx]){
+                                    str += key + "=" + data[idx][key] + "&";
+                                }
+                                str = str.slice(0,-1);
+                                location.href = "xiangqingye.html?" + encodeURI(str);
+                                console.log(str);
+                           }
+
+            }); 
+                }
+                zhixing();
     });
                     
-// ======================================封装排序=========================================
- // function compare(attr){
- //    if(attr=="datetime"){
- //        return function bijiao(obj1,obj2){ 
- //        // var d = new Date;
- //        var value1 = new Date(obj1[attr]);
- //        var value2 = new Date(obj2[attr]);
- //        return value1-value2;}
- //    }
- //    else{
- //        return function bijiao(obj1,obj2){ 
- //        var value1 = obj1[attr];
- //        var value2 = obj2[attr];
- //        return value1-value2;}
- //    }                            
- // }
 
 
 

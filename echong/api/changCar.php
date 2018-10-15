@@ -1,6 +1,7 @@
 <?php
     $id = isset($_POST["id"])? $_POST["id"] : "666";
     $uname = isset($_POST["uname"])? $_POST["uname"] : "666";
+    $qty = isset($_POST["qty"])? $_POST["qty"] : "0055";
 
     $servername = "localhost";
     $username = "root";
@@ -11,24 +12,13 @@
     $result = $conn -> query('select * from delit where name="'.$uname.'" and id="'.$id.'"');
     $c = $result -> fetch_assoc();
     if($c){
-        $res = $conn->query('delete from delit where name="'.$uname.'" and id="'.$id.'"');
+        $res = $conn->query('update delit set qty='.$qty.' where name="'.$uname.'" and id="'.$id.'"');
     }
     if ($res) {
         echo "true";
     } else {
         echo "Error: " . $res . "<br>" . $conn->error;
     }
-
-
-// 删除表数据
-
-// 格式：delete from 表名 where 表达式
-
-//     //删除MyGuests表中id为1的数据
-//     DELETE FROM MyGuests where id=1;
-    
-//     //删除所有数据
-//     DELETE FROM MyGuests
 
 
 

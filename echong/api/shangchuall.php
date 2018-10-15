@@ -1,5 +1,5 @@
 <?php
-    $id = isset($_POST["id"])? $_POST["id"] : "666";
+    // $id = isset($_POST["id"])? $_POST["id"] : "666";
     $uname = isset($_POST["uname"])? $_POST["uname"] : "666";
 
     $servername = "localhost";
@@ -8,10 +8,10 @@
     $dbname = 'echongc';
     $conn = new mysqli($servername, $username, $password, $dbname);
     $conn->set_charset('utf8');
-    $result = $conn -> query('select * from delit where name="'.$uname.'" and id="'.$id.'"');
+    $result = $conn -> query('select * from delit where name="'.$uname.'"');
     $c = $result -> fetch_assoc();
     if($c){
-        $res = $conn->query('delete from delit where name="'.$uname.'" and id="'.$id.'"');
+        $res = $conn->query('delete from delit where name="'.$uname.'"');
     }
     if ($res) {
         echo "true";

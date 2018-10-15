@@ -10,8 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/detail.css">
 	<link rel="stylesheet" type="text/css" href="../zoom.js-master/zoom.css">
     <script type="text/javascript" src="../lieb/jquery-3.2.1.js"></script>
-    <script src="../js/xiangqingye.js"></script>
     <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script src="../js/xiangqingye.js"></script>
 <!--     <script src="../js/index1.js"></script> -->
 <!--     <script src="../lieb/jqzoomCase-master/js/jquery-1.7.min.js"></script>
     <link href="../lieb/jqzoomCase-master/base.css"></link>
@@ -90,7 +90,7 @@
         <!--商品处国旗 BEGIN-->
                 <div class="goodslogo rela">
                         <div id="wrap" class="cloud-zoom-wrap" style="width: 300px; height: 300px; margin-top: 0px; position: relative;">
-                        <a href="#" id="zoom1" class="cloud-zoom" style="z-index: 0; position: relative; display: block;" style="display: block;">
+                        <a href="#" id="zoom1" class="cloud-zoom" style="z-index: 0; position: relative; display: block;">
                         <img class="view-MainImg" src=""></a>
             
             <div class="mousetrap" style="width: 300px; height: 300px; position: absolute;"></div>
@@ -268,7 +268,7 @@
             <div class="norms-con fl">
                 <span class="cgnum fl mr">
                     <span class="chgnum lim-buynum ft14 del-num">-</span>
-                    <input type="text" onchange="Epet.Goods.changeNum(this.value)" onblur="Epet.Goods.changeNum(this.value)" id="cart_buynum" class="text buynum view-BuyNum" value="1">
+                    <input type="text"  id="cart_buynum" class="text buynum view-BuyNum" value="1">
                     <span class="chgnum add-buynum ft14 add-num">+</span>
                 </span>
                 <span class="fl mt">个</span>
@@ -295,7 +295,8 @@
 <input id="cart_pam1" type="hidden" value="">
 
 <!--替换button-->
-<a class="db epet_sensor_add_cart cantAdd"><span class="cfff ">加入购物车</span></a>
+<a class="db epet_sensor_add_cart cantAdd">
+<span class="cfff ">加入购物车</span></a>
 <div id="recommend_tips"></div></div>
 </div>            <!--<div class="advice ml20 fl">-->
                 <!--<a href="#" onclick="pub_reply('200505', 'ask');" class="db ft14 c333 mt5"><i class="db xqico"></i>咨询</a>-->

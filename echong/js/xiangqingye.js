@@ -1,5 +1,6 @@
 jQuery(function($){
     $view = $(".view-MainImg");
+    console.log($view);
     $xiaotu = $(".xiaotu");
     $shuoming = $(".shuoming");
     $p0 = $(".p0");
@@ -62,8 +63,8 @@ jQuery(function($){
                     paramsObj[arr[0]] = arr[1];
                 });
                 if(!/^..\//.test(paramsObj.img)){
-
-                    $view.attr("src","../"+paramsObj.imgsrc);
+                    
+                   $(".view-MainImg").attr("src","../"+paramsObj.img);
                     $xiaotu.attr("src","../"+paramsObj.img);
                     $shuoming.append(paramsObj.name);
                     $p0.append(paramsObj.name);
@@ -73,7 +74,7 @@ jQuery(function($){
             
                     // $guige.attr("src","../"+paramsObj.img);
                 }else{
-                    $view.attr("src",paramsObj.imgsrc);
+                    $view.attr("src",paramsObj.img);
 
                     $xiaotu.attr("src",paramsObj.img);
                     $shuoming.append(paramsObj.name);
@@ -84,8 +85,8 @@ jQuery(function($){
                     
                   // $guige.attr("src",paramsObj.imgsrc);
                 }
+                // console.log($view.attr());
 
-console.log($view);
 
             // =============添加购物车
             $carAdd = $(".cantAdd");

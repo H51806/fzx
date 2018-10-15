@@ -55,9 +55,9 @@ jQuery(function($){
                     // })
                     
                     for(var i=0;i<data.length;i++){
-				  $tbody.append('<tr class="cart-order item-entry" data-eventid="'+data[i].id+'">'+
+				  $tbody.append('<tr class="cart-order item-entry view-ItemEntry" data-eventid="'+data[i].id+'">'+
 								'<td width="50" align="center">'+
-								'<input autocomplete="off" class="J_itemCheck" checked="checked" type="checkbox" name="check_goods_150590" doclick="check" data-eventid="'+data[i].id+'">'+
+								'<input autocomplete="off" class="J_itemCheck cart-td-check" checked="checked" type="checkbox" name="check_goods_150590" doclick="check" data-eventid="'+data[i].id+'">'+
 								'</td>'+
 								'<td width="500" valign="middle">'+
 								'<div class="por-img fl overflow bgwhite ftc">'+
@@ -73,12 +73,12 @@ jQuery(function($){
 								'<td width="150" align="center" style="padding-top:20px;">'+
 								'<div class="buynum-wrap clearfix cart-td-number">'+
 								'<span id="less1" doclick="changeBuyNum" act="sub" class="ft18 fl del-num">'+'-'+'</span>'+
-								'<input autocomplete="off" name="gnum_150590" stock="517" oldnum="1" type="text" class="text buynum ftc fl bgwhite  view-ItemEntryNum" value="1" id="num" data-eventid="'+data[i].qty+'">'+
+								'<input autocomplete="off" name="gnum_150590" stock="517" oldnum="1" type="text" class="text buynum ftc fl bgwhite  view-ItemEntryNum" value="'+data[i].qty+'" id="num" >'+
 								'<span doclick="changeBuyNum" act="add" id="add1" class="fl add-num">'+'+'+'</span>'+
 								'</div>'+
 								'<p class="c666 mtneg10">有货</p>'+
 								'</td>'+
-								'<td width="200" align="center" class="c000 bold ft14">'+
+								'<td width="200" align="center" class="c000 bold ft14 view-ItemEntryPrice">'+
 								data[i].curprice+'</td>'+
 								'<td width="200" align="center">'+
 								'<a href="#" onclick="Epet.Common.addFavors(150590)" class="c666">'+'[收藏]'+'</a>'+
@@ -91,14 +91,14 @@ jQuery(function($){
 								'<div class="w-max ct">'+
 								'<div class="fl c333 pl10">'+
 								'<label class="mr20">'+
-								'<input autocomplete="off" checked="checked" type="checkbox" class="all-checkbox J_checkAll J_eventCheck aa" name="check_all_" data-eventid="'+data[i].id+'" doclick="check">'+'全选'+
+								'<input autocomplete="off" checked="checked" type="checkbox" class="all-checkbox J_checkAll J_eventCheck aa td" name="check_all_" data-eventid="'+data[i].id+'" doclick="check">'+'全选'+
 								'</label>'+
 								'<a href="#" doclick="deleteSelected" class="c333 view-BatchDelBtn">'+'[ 删除选中商品 ]'+'</a>'+
 								'<a href="#" doclick="favorSelected" class="c333 ml5">'+'[ 收藏选中商品 ]'+'</a>'+
 								'</div>'+
 								'<div class="fr cart-price">'+
-								'总价（不含运费）'+'<strong class="ft18 view-ItemEntryPrice">'+data[i].curprice+'</strong>'+
-								'<a href="#" onclick="Epet.Cart.Submit.checkOut(this)" class="cfff epet_sensor_settlement go-balance ftc bold ft18 ml20 bggreen">'+'去结算(1)'+'</a>'+
+								'总价（不含运费）'+'<strong class="ft18 view-ItemEntryPrice qi"></strong>'+
+								'<a href="#" onclick="Epet.Cart.Submit.checkOut(this)" class="cfff epet_sensor_settlement go-balance ftc bold ft18 ml20 bggreen">'+'去结算('+data[i].qty+')'+'</a>'+
 								'</div>'+
 								'<div class="clear">'+'</div>'+
 								'</div>'+
@@ -219,7 +219,7 @@ jQuery(function($){
                       
                       $id = $(this).closest(".item-entry").attr("data-eventid");
                        $.ajax({
-                            url: '../api/del.php',
+                            url: '../api/shangchu.php',
                             type: 'POST',
                             data: {id:$id,
                                   uname:$uname,
@@ -236,7 +236,7 @@ jQuery(function($){
                     zongshu();
                     // $id = $(this).closest(".item-entry").attr("data-eventid");
                        $.ajax({
-                            url: '../api/shanchu.php',
+                            url: '../api/shangchuall.php',
                             type: 'POST',
                             data: {
                                   uname:$uname,
@@ -260,10 +260,10 @@ jQuery(function($){
                         $p = $(".view-ItemEntryPrice");
                         // console.log($p.text());
                       $.each(input,function(idx,item){
-                        // console.log(jiage)
+                        // console.log(input);
                         
                         zong+=$(this).closest(".td").find("input[ type='checkbox' ]").length;
-                       
+                       		
                       })
 
                    
@@ -308,7 +308,7 @@ jQuery(function($){
                   function change(){
                     
                           $.ajax({
-                            url: '../api/changeCar.php',
+                            url: '../api/changCar.php',
                             type: 'POST',
                             data: {id:$id,
                                   uname:$uname,

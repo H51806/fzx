@@ -20,7 +20,7 @@
     
     if($c){
        $qty = ++$c["qty"];
-       $res = $conn->query("update delit delit qty=".$qty." where id=".$id);
+       $res = $conn->query("update delit set qty=".$qty." where id=".$id);
     }else{
         $res = $conn ->query('insert into delit(id,name,imgsrc,title
 ,jieshao,curprice,oldprice,xiaoji,qty)values("'.$id.'","'.$name.'","'.$imgsrc.'","'.$title.'","'.$jieshao.'","'.$curprice.'","'.$oldprice.'","'.$xiaoji.'","'.$qty.'")');
