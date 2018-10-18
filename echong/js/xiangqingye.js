@@ -74,7 +74,7 @@ jQuery(function($){
             
                     // $guige.attr("src","../"+paramsObj.img);
                 }else{
-                    $view.attr("src",paramsObj.img);
+                    $(".view-MainImg").attr("src",paramsObj.img);
 
                     $xiaotu.attr("src",paramsObj.img);
                     $shuoming.append(paramsObj.name);
@@ -185,23 +185,23 @@ jQuery(function($){
 
 // // =======================放大镜=================================
 
-//                 $("#zoom_01").ezPlus();
-//                 $("#zoom_03").ezPlus({
-//                     gallery: 'gallery_01',
-//                     cursor: 'pointer',
-//                     galleryActiveClass: "active",
-//                     imageCrossfade: true,
-//                     loadingIcon: "images/spinner.gif"
-//                 });
+                $("#zoom_01").ezPlus();
+                $("#zoom_03").ezPlus({
+                    gallery: 'gallery_01',
+                    cursor: 'pointer',
+                    galleryActiveClass: "active",
+                    imageCrossfade: true,
+                    loadingIcon: "images/spinner.gif"
+                });
 
-//                 $("#zoom_03").bind("click", function (e) {
-//                     var ez = $('#zoom_03').data('ezPlus');
-//                     ez.closeAll(); //NEW: This function force hides the lens, tint and window
-//                     $.fancybox(ez.getGalleryList());
-//                     return false;
-//                 });
+                $("#zoom_03").bind("click", function (e) {
+                    var ez = $('#zoom_03').data('ezPlus');
+                    ez.closeAll(); //NEW: This function force hides the lens, tint and window
+                    $.fancybox(ez.getGalleryList());
+                    return false;
+                });
 
-//             // });
+            // });
 
  
 
